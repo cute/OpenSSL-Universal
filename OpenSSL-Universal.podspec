@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.9'
-  s.deployment_target = '6.0'
   s.source_files        = 'include/openssl/*.h'
   s.public_header_files = 'include/openssl/*.h'
   s.header_dir          = 'openssl'
