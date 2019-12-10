@@ -25,13 +25,12 @@ Pod::Spec.new do |s|
                      'Justin Plouffe' => 'plouffe.justin@gmail.com'}
 
   s.requires_arc = false
-  s.default_subspec = 'Static'
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.9'
-  sp.deployment_target = '6.0'
-  sp.source_files        = 'include/openssl/*.h'
-  sp.public_header_files = 'include/openssl/*.h'
-  sp.header_dir          = 'openssl'
-  sp.preserve_paths      = 'lib/libcrypto.a', 'lib/libssl.a'
-  sp.vendored_libraries  = 'lib/libcrypto.a', 'lib/libssl.a'
+  s.deployment_target = '6.0'
+  s.source_files        = 'include/openssl/*.h'
+  s.public_header_files = 'include/openssl/*.h'
+  s.header_dir          = 'openssl'
+  s.preserve_paths      = 'lib/libcrypto.a', 'lib/libssl.a'
+  s.vendored_libraries  = 'lib/libcrypto.a', 'lib/libssl.a'
 end
